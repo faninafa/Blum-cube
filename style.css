@@ -1,7 +1,7 @@
 * {
 	box-sizing: border-box;
 }
-
+/* fgfgfg */
 body {
   background-color: lightskyblue;
   overflow: hidden;
@@ -22,6 +22,7 @@ body {
 }
 
 .side {
+
 	position: absolute;
 	width: inherit;
 	height: inherit;
