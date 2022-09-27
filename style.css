@@ -1,0 +1,67 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+  background-color: lightskyblue;
+  overflow: hidden;
+}
+
+.container {
+	position: relative;
+	margin: 200px auto;
+	width: 300px;
+	height: 300px;
+	perspective: 500px;
+}
+
+.cube {
+	width: inherit;
+	height: inherit;
+	transform-style: preserve-3d;
+}
+
+.side {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	border: 5px solid rgb(67, 67, 67);
+	font: normal 40px Arial;
+	text-align: center;
+	line-height: 70px;
+	color: rgb(67, 67, 67);
+  backface-visibility:hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front {
+	transform: translateZ(150px);
+  background-color: rgb(251, 251, 142);
+}
+
+.back {
+	transform: rotateY(180deg) translateZ(150px);
+  background-color: rgb(251, 142, 142);
+}
+
+.right {
+	transform: rotateY(90deg) translateZ(150px);
+  background-color: rgb(173, 251, 142);
+}
+
+.left {
+	transform: rotateY(-90deg) translateZ(150px);
+  background-color: rgb(142, 157, 251);
+}
+
+.top {
+	transform: rotateX(90deg) translateZ(150px);
+  background-color: rgb(251, 142, 233);
+}
+
+.bottom {
+	transform: rotateX(-90deg) translateZ(150px);
+  background-color: rgb(197, 104, 255);
+}
